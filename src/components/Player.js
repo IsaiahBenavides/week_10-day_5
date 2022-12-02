@@ -1,15 +1,13 @@
-function Player() {
+function Player(props) {
     return (
-        <ul>
-            <li>
-                <h2>
-                    Player:
-                </h2>
-                <h3>
-                    Wins:
-                </h3>
-            </li>
-        </ul>
+        <div>
+            <h2>
+                Player: {props.whichPlayer}
+            </h2>
+            <h3>
+                Wins: {}
+            </h3>
+        </div>
     )
 }
 
