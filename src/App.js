@@ -1,25 +1,45 @@
-import logo from './logo.svg';
+// All your imports should be at the top
+// components
+import Header from "./components/Header"
+import Player from "./components/Player"
+
+// css
 import './App.css';
 
-function App() {
+export default function App() {
+  // What is JSX? JSX is a hybrid of JavaScript and HTML. In JSX, we can only return one parent element. Typically a div or you can use a React.Fragment
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Player />
+      <Player />
+    </>
+
+    // This is a fragment
+    // <>
+    // <Header />
+    // <Header />
+    // </>
+
+    // This is the <div> way
+    // <div>
+    //   <Header />
+    //   <Header />
+    // </div>
   );
 }
 
-export default App;
+// const App = () => {
+//   return (
+//     <h1>
+//       React Tac Toe
+//     </h1>
+//   )
+// }
+
+// export default App
+
+// Vanilla JS
+// function declarations using the function
+// function expressions
+// arrow functions6
