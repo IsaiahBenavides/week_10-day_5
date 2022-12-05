@@ -11,9 +11,11 @@ export default function App() {
   // What is JSX? JSX is a hybrid of JavaScript and HTML. In JSX, we can only return one parent element. Typically a div or you can use a React.Fragment
   return (
     <>
-      <Header />
+      <Header /> 
+      <div className="container">
       <Player whichPlayer ="X"/>
       <Player whichPlayer ="O"/>
+      </div>
       <Board />
     </>
 
